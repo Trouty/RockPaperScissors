@@ -5,8 +5,58 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <script src="./js/rps.js"  defer></script>
+  <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-  <script src="./script.js"></script>
+  <div class="header">
+    <div class="title">Rock Paper Scissors</div> 
+  </div>
+  <div id="outcome">Chose your weapon!</div>
+  <div class="cards-container">
+    <div class="user-card-container">
+      <ul class="user-information">
+        <li class="user-name">You:</li>
+        <li id="user-score">0</li>  
+      </ul>
+      <div class="user-rps-buttons">
+        <button id="rock" class="rock-button">
+          <div>Rock</div>
+          <img src="./icons/hand-back-fist-regular.svg">
+        </button>
+        <button id="paper" class="paper-button">
+          <div>Paper</div>
+          <img src="./icons/hand-regular.svg">
+        </button>
+        <button id="scissors" class="scissors-button">
+          <div>Scissors</div>
+          <img src="./icons/hand-scissors-regular.svg">
+        </button>
+      </div>
+    </div>
+    <div class="computer-card-container">
+      <ul class="computer-information">
+        <li class="computer-name">Computer:</li>
+        <li id="computer-score">0</li>  
+      </ul>
+      <div class="computer-rps-buttons">
+        <button id="computer-rock" class="rock-button">
+          <div>Rock</div>
+          <img src="./icons/hand-back-fist-regular.svg">
+        </button>
+        <button id="computer-paper" class="paper-button">
+          <div>Paper</div>
+          <img src="./icons/hand-regular.svg">
+        </button>
+        <button id="computer-scissors" class="scissors-button">
+          <div>Scissors</div>
+          <img src="./icons/hand-scissors-regular.svg">
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <div class="footer-text">Made by Trouty</div>
+  </div>
 </body>
 </html>
